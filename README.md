@@ -1,8 +1,5 @@
 # Mobile AR Plant Health Detector 🌿
 
-![AR Scanning Interaction Flow](ar-scanning-demo.gif)
-![Uploading ar-result-details.gif.gif…]()
-
 > **Interaction Preview:** A 3-stage scanning flow (Scanning → Locked → Result) designed for high outdoor visibility using Glassmorphism and High-Contrast type.
 
 A **Mobile Augmented Reality (AR)** interface designed to assist users in evaluating plant health in dynamic outdoor lighting conditions.
