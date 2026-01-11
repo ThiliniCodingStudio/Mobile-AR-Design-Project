@@ -1,20 +1,9 @@
 # Mobile AR Plant Health Detector 🌿
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">State 1: Context-Aware Scanning</h3>
-      <img src="ar-scanning-flow.gif" width="100%" alt="AR Scanning Animation">
-    </td>
-    <td width="50%">
-      <h3 align="center">State 2: High-Contrast Results</h3>
-      <img src="ar-result-details.gif" width="100%" alt="AR Result Card UI">
-    </td>
-  </tr>
-</table>
+![AR Scanning Interaction Flow](ar-scanning-demo.gif)
 ![Uploading ar-result-details.gif.gif…]()
 
-> **UX Engineering Highlight:** The interface transitions from a minimal "Scanning Reticle" (to maximize camera visibility) to a "Glassmorphism" Result Card. This ensures high readability of health metrics (e.g., Hydration: 30%) even against complex, organic backgrounds in outdoor lighting.
+> **Interaction Preview:** A 3-stage scanning flow (Scanning → Locked → Result) designed for high outdoor visibility using Glassmorphism and High-Contrast type.
 
 A **Mobile Augmented Reality (AR)** interface designed to assist users in evaluating plant health in dynamic outdoor lighting conditions.
 
