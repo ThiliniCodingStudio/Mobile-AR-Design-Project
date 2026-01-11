@@ -1,8 +1,5 @@
 # Mobile AR Plant Health Detector 🌿
 
-![ar-result-details gif](https://github.com/user-attachments/assets/7a23de54-eb8f-4be6-baee-75cf12df1471)
-![ar-scanning-flow gif](https://github.com/user-attachments/assets/9cfa5950-5825-4aec-b089-884e81f5ceae)
-
 
 > **Interaction Preview:** A 3-stage scanning flow (Scanning → Locked → Result) designed for high outdoor visibility using Glassmorphism and High-Contrast type.
 
