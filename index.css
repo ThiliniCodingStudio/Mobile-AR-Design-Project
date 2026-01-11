@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* AR Interface - Dark Glassmorphism Theme */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Vibrant Green for Detection Success */
+    --primary: 142 76% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Accent for scanning state */
+    --accent: 200 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Warning Orange for Health Alerts */
+    --warning: 32 95% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Success State */
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 20%;
+    --ring: 142 76% 45%;
+
+    --radius: 1rem;
+
+  /* Glassmorphism Variables */
+    --glass-bg: 0 0% 0% / 0.55;
+    --glass-border: 0 0% 100% / 0.15;
+    --glass-blur: 20px;
+
+    /* Scan Animation */
+    --scan-color: 142 76% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply rounded-2xl border backdrop-blur-xl;
+    background: hsl(var(--glass-bg));
+    border-color: hsl(var(--glass-border));
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* Scan Reticle Corners */
+  .reticle-corner {
+    @apply absolute w-8 h-8;
+  }
+
+  .reticle-corner::before,
+  .reticle-corner::after {
+    content: '';
+    @apply absolute bg-current;
+  }
+
+  .reticle-corner--tl::before {
+    @apply top-0 left-0 w-full h-1 rounded-full;
+  }
+  .reticle-corner--tl::after {
+    @apply top-0 left-0 w-1 h-full rounded-full;
+  }
+
+  .reticle-corner--tr::before {
+    @apply top-0 right-0 w-full h-1 rounded-full;
+  }
+  .reticle-corner--tr::after {
+    @apply top-0 right-0 w-1 h-full rounded-full;
+  }
+
+  .reticle-corner--bl::before {
+    @apply bottom-0 left-0 w-full h-1 rounded-full;
+  }
+  .reticle-corner--bl::after {
+    @apply bottom-0 left-0 w-1 h-full rounded-full;
+  }
+
+  .reticle-corner--br::before {
+    @apply bottom-0 right-0 w-full h-1 rounded-full;
+  }
+  .reticle-corner--br::after {
+    @apply bottom-0 right-0 w-1 h-full rounded-full;
+  }
+
+  /* Progress Bar */
+  .progress-track {
+    @apply h-2 rounded-full bg-white/10 overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-500;
+  }
+}
+
+@layer utilities {
+  .text-shadow-lg {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  }
+}
